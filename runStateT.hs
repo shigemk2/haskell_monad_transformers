@@ -12,3 +12,4 @@ f2 = runStateT st                -- 生の内部関数を取り出し
 main = do
     print $ f1 ()                -- (値, 状態)
     print $ runIdentity $ f2 ()  -- Identityで包まれている
+    -- print $ f2 ()  -- Identityで包まれている
