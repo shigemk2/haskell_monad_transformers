@@ -7,5 +7,4 @@ fact x = (`execStateT` 1) $ do
         v <- get
         lift $ putStrLn $ "*" ++ show i ++ " -> " ++ show v
 
-main = do
-  print =<< fact 5
+main = fact 5 >>= print
