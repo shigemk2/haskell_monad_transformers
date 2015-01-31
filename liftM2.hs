@@ -1,4 +1,6 @@
 import Control.Monad
 
-main = print $ liftM2 (+) [1] [1]
+main = do
+  print $ liftM2 (,) [0,1] [1]
+  -- print $ liftM2 (++) [1] [1]
 
